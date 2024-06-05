@@ -5,7 +5,7 @@ blogData.push({
     title: '¿Que es React?',
     slug: 'que-es-react',
     content: 'React es el mejor framework(libreria) de JavaScript, parece una arquitectura',
-    author: 'Juan DC',
+    author: 'Pepe',
 })
 blogData.push({
     title: '¿Que es Vue?',

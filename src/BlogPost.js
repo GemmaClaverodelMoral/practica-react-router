@@ -10,17 +10,14 @@ function BlogPost () {
     let blogPost = []
     blogPost = auth.data.find(post => post.slug === slug)
 
-    const canDelete = auth.user?.isAdmin || blogPost.author === auth.user?.userName
+    const canDelete = auth.user?.userType !== '' || blogPost.author === auth.user?.userName
 
     const returnToBlog = () => {
         navigate('/blog') //navigate(-1) //devuelve a la ruta visitada anterior a la actual
     }
 
     const removeBySlug = () => {
-        console.log("array:prefilter en removeBySlug", auth.data)
-        console.log('slug:', slug)
         const newArray = auth.data.filter(item => item.slug !== slug);
-        console.log('array:postfilter en remove', newArray)
         auth.updateData( newArray ) 
         returnToBlog()
     };

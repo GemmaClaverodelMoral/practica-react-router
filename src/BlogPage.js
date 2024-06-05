@@ -7,7 +7,6 @@ function BlogPage () {
     const auth = useAuth()
     let blogPosts = []
     blogPosts = auth.data
-    console.log('blogPosts en Blogpage:',blogPosts)
 
     return (
         <>

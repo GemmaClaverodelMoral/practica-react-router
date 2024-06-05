@@ -4,8 +4,8 @@ import { useAuth } from "./auth";
 
 function Secret () {
     const auth = useAuth()
-
-    if ( auth.user.userName !== 'Gemma' ) {
+    
+    if ( !auth.user || auth.user?.userType === '' ) {
         return (
             < Navigate to= "/" />
         )
@@ -14,7 +14,11 @@ function Secret () {
     return (
         <>
             <h2>Secret</h2> 
-            {auth.user?.userName === 'Gemma' && <p>Hola {auth.user.userName}, la informacion secreta esta a tu disposición</p>}
+            {auth.user?.userType !== '' && 
+              <>
+                <p>Hola {auth.user?.userName}, la informacion secreta esta a tu disposición</p>
+                <p>Eres usuario tipo: {auth.user?.userType}</p>
+              </>}
         </>
     )};
 
