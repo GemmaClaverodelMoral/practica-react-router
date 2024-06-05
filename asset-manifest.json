@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/practica-react-router/static/css/main.e6c13ad2.css",
+    "main.js": "/practica-react-router/static/js/main.623af177.js",
+    "static/js/453.cccddb08.chunk.js": "/practica-react-router/static/js/453.cccddb08.chunk.js",
+    "index.html": "/practica-react-router/index.html",
+    "main.e6c13ad2.css.map": "/practica-react-router/static/css/main.e6c13ad2.css.map",
+    "main.623af177.js.map": "/practica-react-router/static/js/main.623af177.js.map",
+    "453.cccddb08.chunk.js.map": "/practica-react-router/static/js/453.cccddb08.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.623af177.js"
+  ]
+}
